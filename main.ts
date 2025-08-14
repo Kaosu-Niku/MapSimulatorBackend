@@ -12,9 +12,11 @@ const port = 3000;
 app.use(express.json());
 
 import enemyRoutes from "./src/routes/enemy"
+import characterRoutes from "./src/routes/character"
 import assetsRoutes from "./src/routes/assets"
 
 app.use("/enemy", enemyRoutes)
+app.use("/character", characterRoutes)
 app.use("/assets", assetsRoutes)
 
 //设置静态资源
